@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: black;">
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" style="color: aliceblue;">Consulta CEP</a>
+        <div class="d-flex">
+            <input class="form-control" style="margin-right: 5px; background-color: aliceblue;" type="search" placeholder="CEP" aria-label="CEP" id="cep">
+            <button class="btn btn-outline-success" onclick="consultar()">Buscar</button>
+        </div>
+    </nav>
+    <div class="container barra-progresso" style="margin-top: 50px;">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+        </div>
+    </div>
+
+    <div class="container cep" style="color: aliceblue; margin-top: 20px;">
+        <div class="row">
+            <h3 id="tituloCep">CEP</h3>
+        </div>
+        <div class="row" style="margin-top: 15px;">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Rua</td>
+                        <td id="rua"></td>
+                    </tr>
+                    <tr>
+                        <td>Bairro</td>
+                        <td id="bairro"></td>
+                    </tr>
+                    <tr>
+                        <td>Cidade</td>
+                        <td id="cidade"></td>
+                    </tr>
+                    <tr>
+                        <td>Estado</td>
+                        <td id="uf"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
